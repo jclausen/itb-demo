@@ -1,0 +1,48 @@
+//core display libraries
+@import '/includes/css/lib/bootstrap/bootstrap.min.css';
+@import '/includes/css/lib/bootstrap/bootstrap-overrides.css';
+@import '/includes/css/lib/bootstrap.datepicker.css';
+@import '/includes/css/lib/jquery-ui-1.10.2.custom.css';
+//override prefix
+$fa-css-prefix: fa;
+@import '../include/_fa_variables';
+@import '../../../bower_components/font-awesome-sass/assets/stylesheets/font-awesome.scss';
+//Font Awesome
+[class^="fa-"],
+[class*=" fa-"] {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  -webkit-font-smoothing: antialiased;
+  *margin-right: .3em;
+}
+[class^="fa-"]:before,
+[class*=" fa-"]:before {
+  text-decoration: inherit;
+  display: inline-block;
+  speak: none;
+}
+
+//Custom segments from theme
+
+@import '../include/theme/icons';
+@import '../include/theme/elements';
+@import '../include/theme/ui-elements';
+@import '../include/theme/form-wizard';
+
+//Application styles
+@import '../include/_util';
+@import '../include/_forms';
+
+
+.datepicker.datepicker-dropdown  {
+	margin-top: 20px;
+	div.datepicker-days{
+		font-size: .9em!important;
+		table{
+			font-size: inherit;
+		}
+	}
+}
+

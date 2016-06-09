@@ -1,0 +1,8 @@
+{
+    "heapSize":"2048",
+    "web":{
+        "rewrites":{
+            "enable":true
+        }
+    }
+}

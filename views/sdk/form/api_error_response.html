@@ -1,0 +1,11 @@
+<div class="alert alert-danger col-xs-12">
+	<p>
+		<i class="fa fa-warning pull-left" style="margin: 20px 35px 20px 35px"></i> 
+		An error was received while attempting to send your information.  The message recieved was:<br>
+		<em><%=errorMessage%></em>
+		<% if(typeof(errorDetail) !== 'undefined') { %>
+			<br>	
+			<strong><%=errorDetail%></strong>
+		<% } %>
+	</p>
+</div>

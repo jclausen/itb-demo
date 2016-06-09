@@ -1,0 +1,27 @@
+<%
+ if(typeof(questionsTitle) === 'undefined') questionsTitle='Please Tell Us';
+%>
+<fieldset id="registration-questions">
+	<legend><%=questionsTitle%></legend>
+			
+	<% 
+		for(var i in questions){
+			var question=questions[i];
+			var templateId = 'question-select-template';
+			if(question.textonly && question.longtext){
+				var templateId = 'question-textarea-template';
+			} else if(question.textonly){
+				var templateId = 'question-text-template';
+			} else if(question.displayradio){
+				var templateId = 'question-radio-template';
+			}
+			var answerTemplate = _.template($('#' + templateId).html());
+	%> 
+		<div class="form-group" data-question-id="<%=question.id%>">
+			<label>
+				<%=question.question%>
+			</label>
+			<%=answerTemplate(question)%>
+		</div>
+	<% } %>
+</fieldset>

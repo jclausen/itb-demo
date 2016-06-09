@@ -1,0 +1,10 @@
+{
+	"version": 3,
+	"file": "sdk.css",
+	"sources": [
+		"../../scss/view/sdk.scss",
+		"../../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss"
+	],
+	"mappings": "AACA,cAAc,AAAA,CACb,SAAS,CAAE,IAAK,CAChB,KAAK,CCkBkB,OAAO,CDjB9B",
+	"names": []
+}

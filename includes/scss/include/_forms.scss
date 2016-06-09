@@ -1,0 +1,60 @@
+/**Address Form Blocks**/
+.names-block {
+	.form-group {
+		width: 49%;
+		float: left;
+		&:last-child{
+			margin-left: 2%;
+		}
+	}
+}
+
+.address-block{
+	width: 100%;
+	margin-bottom: 30px;
+	margin-top: 15px;
+
+	.city{
+		display:block;
+		float:left;
+		width: 56%;
+	}
+	.state{
+		display:block;
+		float:left;
+		width: 18.5%;
+	}
+	.zip {
+		display:block;
+		float: left;
+		width: 20%;
+		margin-left: 15px;
+	}
+	i.icon.icon-comma {
+		color: #696969;
+		display:block;
+		float:left;
+		vertical-align:sub;
+		padding-left: 2px;
+		padding-right: 5px;
+		padding-top: 20px;
+		line-height: 2.3em;
+		font-size: 1.5em;
+	}
+		
+}
+@media (max-width: 725px) {
+.address-block{
+	
+	.city,.state,.zip{
+		display:block;
+		float:none;
+		width: 100%;
+		margin-left: 0px;
+	}
+	i.icon.icon-comma {
+		display:none;
+	}
+		
+}
+}

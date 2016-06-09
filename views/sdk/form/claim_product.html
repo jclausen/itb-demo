@@ -1,0 +1,48 @@
+<%
+	if(typeof(settings.snExample) === 'undefined') settings.snExample = "<div class='media'><div class='media-heading'><p>Your model and serial numbers can be found on your product label.</p></div></div>";
+%>
+<fieldset id="fields-product">
+	
+	<div class="req form-group">
+		<label for="ModelNumber">
+			<i class="text-info fa fa-info-circle" data-toggle="popover" data-html="true" data-title="Where are my model number and serial number located?" data-content="<%=settings.snExample%>"></i>
+			Product Model Number
+		</label>
+		<select name="ModelNumber" data-required="true" id="ModelNumber" class="form-control">
+			<% for(var i in products){ %>
+				<option value="<%= products[i].id %>"><%= products[i].modelnumber + ' (' + products[i].category.name + ')' %></option>
+			<% } %>	
+		</select>			
+	</div>
+
+
+	<div class="req form-group">
+		<label for="SerialNumber">
+			<i class="text-info fa fa-info-circle" data-toggle="popover" data-html="true" data-title="Where are my model number and serial number located?" data-content="<%=settings.snExample%>"></i>
+			Product Serial Number 
+		</label>
+		<input type="text" name="SerialNumber" value="" data-required="true" id="SerialNumber" class="form-control" data-validation-message="Your serial number could not be validated. Please try again.">		
+	</div>
+	
+	<div class="req form-group">
+		<label for="InstallDate">
+			Date of Installation
+		</label>
+		<input type="text" name="InstallDate" class="form-control input-datepicker" data-position="bottom" data-required="true" id="InstallDate">			
+	</div>
+
+	<div class="req form-group">
+		<label for="FailureDate">
+			Date of Product Failure
+		</label>
+		<input type="text" name="FailureDate" class="form-control input-datepicker" data-position="bottom" data-required="true" id="FailureDate">			
+	</div>
+
+	<div class="req form-group">
+		<label for="NotificationEmail">
+		Please enter the email address where you would like a confirmation of this claim to be sent.
+		</label>
+		<input type="text" name="NotificationEmail" class="form-control" data-required="true" id="NotificationEmail">
+	</div>
+
+</fieldset>

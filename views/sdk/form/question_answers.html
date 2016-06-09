@@ -1,0 +1,23 @@
+<script type="text/template" id="question-textarea-template">
+		<textarea class="form-control" name="question-response-<%=id%>"></textarea>
+</script>
+
+<script type="text/template" id="question-text-template">
+		<input class="form-control" name="question-response-<%=id%>"/>
+</script>
+
+<script type="text/template" id="question-select-template">
+	<select class="form-control" name="question-response-<%=id%>">
+		<% for(var j in answers) { %>
+			<option value="<%=answers[j].value%>"><%=answers[j].label%></option>
+		<% } %>
+	</select>
+</script>
+
+<script type="text/template" id="question-radio-template">
+	<% for(var j in answers) { %>
+	<label class="radio-inline">
+  		<input name="question-response-<%=id%>" type="radio" value="<%=answers[j].value%>"> <%=answers[j].label%>
+	</label>
+	<% } %>
+</script>

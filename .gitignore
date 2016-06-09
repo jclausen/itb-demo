@@ -1,0 +1,13 @@
+/.project
+/.DS_Store
+*.DS_Store
+/includes/tmp/*
+/.externalToolBuilders
+/.sass-cache/*
+/.sass-cache
+/bower_components/*
+/bower_components
+/node_modules/*
+/node_modules
+/*.sublime*
+*hbm.xml

@@ -1,0 +1,22 @@
+{
+    "dependencies":{
+        "coldbox":"4.1.0+00002",
+        "cborm":"1.0.3",
+        "cbsecurity":"1.1.0",
+        "cbmailservices":"1.0.0",
+        "cbmessagebox":"1.0.0",
+        "cbstorages":"1.0.0",
+        "relax":"2.1.0",
+        "testbox":"2.2.0"
+    },
+    "installPaths":{
+        "coldbox":"coldbox",
+        "cborm":"modules/cborm",
+        "cbsecurity":"modules/cbsecurity",
+        "cbmailservices":"modules/cbmailservices",
+        "cbmessagebox":"modules/cbmessagebox",
+        "cbstorages":"modules/cbstorages",
+        "relax":"modules/relax",
+        "testbox":"testbox"
+    }
+}

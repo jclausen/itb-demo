@@ -1,0 +1,77 @@
+<%
+	if(typeof(settings.snExample) === 'undefined') settings.snExample = "<div class='media'><div class='media-heading'><p>Your model and serial numbers can be found on your product label.</p></div></div>";
+%>
+<fieldset id="fields-product">
+	
+	<div class="req form-group">
+		<label for="ModelNumber">
+			<i class="text-info fa fa-info-circle" data-toggle="popover" data-html="true" data-title="Where are my model number and serial number located?" data-content="<%=settings.snExample%>"></i>
+			Product Model Number 
+		</label>
+		<select name="ModelNumber" data-required="true" id="ModelNumber" class="form-control">
+			<% for(var i in products){ %>
+				<option value="<%= products[i].id %>"><%= products[i].modelnumber + ' (' + products[i].category.name + ')' %></option>
+			<% } %>	
+		</select>			
+	</div>
+
+
+	<div class="req form-group">
+		<label for="SerialNumber">
+			<i class="text-info fa fa-info-circle" data-toggle="popover" data-html="true" data-title="Where are my model number and serial number located?" data-content="<%=settings.snExample%>"></i>
+			Product Serial Number 
+		</label>
+		<input type="text" name="SerialNumber" value="" data-required="true" id="SerialNumber" class="form-control" data-validation-message="Your serial number could not be validated. Please try again.">		
+	</div>
+
+	<div class="req form-group state">
+		<label for="InstallState">
+			State/Province where product is installed
+		</label>
+
+		<select name="InstallState" data-required="true" id="InstallState" class="form-control state-select"></select>			
+	</div>
+
+	<div class="req form-group">
+		<label for="InstallDate">
+			Date of Purchase / Installation
+		</label>
+		<input type="text" name="InstallDate" class="form-control input-datepicker" data-position="bottom" data-required="true" id="InstallDate" class="form-control">			
+	</div>
+
+	<div class="form-group">
+		<p>Please Note: Similar registration details will be provided to <cfoutput>#getSetting("tennantCompanyShortName")#</cfoutput> by your supplier/installer to validate their claim for warranty support; it is essential that the dates of supply/installation correspond to within one month.</p>			
+	</div>
+				
+	<div class="req form-group">
+	<label>Installation Setting</label>
+	
+		<div class="radio">
+			<label><input name="InstallType"type="radio" value="Residential">Residential</label>
+		</div>
+
+		<div class="radio">
+			<label><input name="InstallType" type="radio" value="Multi-Family Residential">Multi-Family Residential</label>
+		</div>
+
+		<div class="radio">
+			<label><input name="InstallType" type="radio" value="Commercial">Commercial</label>
+		</div>
+	<div>
+
+	<div class="clearfix"></div>
+	<div class="form-group col-xs-12">
+	<p>For warranty terms and conditions, please view our <a href="<%=settings.warranty_info_url%>" target="_blank">warranty information</a>.&nbsp;</p>			
+	</div>
+
+
+	<div class="form-group">
+		<p>Important: Failure to complete and submit this form does not diminish your warranty rights.</p>			
+	</div>
+
+
+	<div class="form-group">
+		<p>Need to make a warranty claim? Use our <a href="<%=settings.warranty_claim_url%>" target="_blank">Warranty Claim Form</a> for fastest service or contact our Customer Care department at <cfoutput>#getSetting("tennantSupportPhone")#</cfoutput> for assistance.</p>			
+	</div>
+
+</fieldset>

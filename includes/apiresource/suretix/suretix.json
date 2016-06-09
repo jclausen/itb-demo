@@ -1,0 +1,70 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "contact": {
+
+        },
+        "termsOfService": "",
+        "version": "",
+        "license": {},
+        "title": "Into The Box - Warranty API Service",
+        "description": "REST API for Into the Box Warranty Registration and Claims"
+    },
+    "host": "suretix.intothebox.org",
+    "basePath": "/api/v1",
+    "schemes": "http",
+    "consumes": [
+        "application/json",
+        "multipart/form-data",
+        "application/x-www-form-urlencoded"
+    ],
+    "produces": [
+        "application/json"
+    ],
+    "paths": {
+        "/api/users": {
+            "post":{"$ref":"paths/users.json#paths.create"},
+            "get":{"$ref":"paths/users.json#paths.list"}   
+        },
+        "/api/users/{id}": {
+            "get":{"$ref":"paths/users.json#paths.get"},
+            "put":{"$ref":"paths/users.json#paths.update"},
+            "patch":{"$ref":"paths/users.json#paths.update"},
+            "patch":{"$ref":"paths/users.json#paths.delete"}
+        },
+        "/api/products": {
+            "post":{"$ref":"paths/products.json#paths.create"},
+            "get":{"$ref":"paths/products.json#paths.list"}   
+        },
+        "/api/products/{id}": {
+            "get":{"$ref":"paths/products.json#paths.get"},
+            "put":{"$ref":"paths/products.json#paths.update"},
+            "patch":{"$ref":"paths/products.json#paths.update"},
+            "patch":{"$ref":"paths/products.json#paths.delete"}
+        }
+        "/api/claims": {
+            "post":{"$ref":"paths/claims.json#paths.create"},
+            "get":{"$ref":"paths/claims.json#paths.list"}   
+        },
+        "/api/claims/{id}": {
+            "get":{"$ref":"paths/claims.json#paths.get"},
+            "put":{"$ref":"paths/claims.json#paths.update"},
+            "patch":{"$ref":"paths/claims.json#paths.update"},
+            "patch":{"$ref":"paths/claims.json#paths.delete"}
+        }
+    },
+    "securityDefinitions": {
+        "apikey": {
+            "in": "header",
+            "name": "apikey",
+            "type": "basic",
+            "description": "The apikey needed for request authentication."
+        }
+    },
+    "x-extensionDetection": false,
+    "x-throwOnInvalidExtension": false,
+    "x-entryPoint": {
+        "DEV": "http://127.0.0.1:49614/api/v1",
+        "PRODUCTION": "http://suretix.intothebox.org/api/v1"
+    }
+}

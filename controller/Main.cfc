@@ -1,0 +1,1 @@
+component extends="BaseController" output=false{	property name="mailService" inject="mailService@cbmailservices";	include '/includes/helpers/loginHelper.cfm';		// Default Action	function index(event,rc,prc){		setNextEvent("dashboard");	}	function coldbox(event,rc,prc){		prc.welcomeMessage = "Welcome to ColdBox!";		event.setView("main/coldbox");	}}

@@ -1,0 +1,45 @@
+.centered {
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align:center!important;
+	clear: both;
+}
+
+.btn-lg {
+	font-size: 1.2em!important;
+	line-height: 1.4em!important;
+	padding: 7px 15px 7px 15px;
+}
+
+
+@media print {
+
+	body{
+		margin: 0px 0px 0px 0px;
+		padding: 0px 0px 0px 0px;
+	}
+	#pad-wrapper.content-container{
+		margin: 0px 0px 0px 0px;
+		padding: 0px 0px 0px 0px;
+		width: inherit!important;
+	}
+	.content {
+		width:inherit!important;
+		float: none;
+		padding-left: 0px!important;
+		margin:0px 0px 0px 0px!important;
+		border-left:none!important;
+		.pad-wrapper{
+
+		}
+	}
+	.hidden-print,
+	.print-page,
+	.comment-add,
+	.add-new-comment,
+	.editable-indicator{
+		display:none!important;
+	}
+
+}

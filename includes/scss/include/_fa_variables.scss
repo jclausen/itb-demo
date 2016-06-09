@@ -1,0 +1,7 @@
+// Variables
+// --------------------------
+$fa-sass-asset-helper: (fa-font-path("") != unquote('fa-font-path("")')) !default;
+
+$fa-font-path:        if($fa-sass-asset-helper, "font-awesome/", "/includes/fonts/font-awesome/") !default;
+$fa-css-prefix:       icon;
+@import '../../../bower_components/font-awesome-sass/assets/stylesheets/font-awesome/_variables';

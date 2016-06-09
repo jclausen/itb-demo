@@ -1,0 +1,9 @@
+{
+	"version": 3,
+	"file": "datatables.css",
+	"sources": [
+		"../../scss/include/theme/datatables.scss"
+	],
+	"mappings": "AAAA,gBAAgB,AAAC,CACb,aAAa,CAAE,IAAK,CACvB",
+	"names": []
+}

@@ -1,0 +1,30 @@
+{
+  "name": "Suretix",
+  "version": "0.0.1",
+  "author": "Silo Web <jon_clausen@silwebworks.com>",
+  "description": "Suretix Warranty Registration and Claims Application",
+  "private": true,
+  "dependencies": {
+    "jquery": "~2.1.0",
+    "bootstrap-sass": "~3.3.3",
+    "font-awesome-sass": "~4.3.0",
+    "bootstrap-datepicker": "latest",
+    "bootstrap-timepicker": "latest",
+    "bootstrap-colorpicker": "latest",
+    "bootstrap-tour": "latest",
+    "bootstrap-validator": "latest",
+    "bootstrap-wizard": "latest",
+    "gauge": "latest",
+    "gmaps": "latest",
+    "html5shiv": "~3.7.2",
+    "select2": "latest",
+    "underscore": "latest",
+    "backbone": "latest",
+    "moment": "~2.10.6",
+    "morris.js": "~0.5.1",
+    "Flot": "flot#~0.8.3",
+    "raphael": "~2.1.4",
+    "cryptojslib": "~3.1.2",
+    "bootbox.js": "bootbox#~4.4.0"
+  }
+}

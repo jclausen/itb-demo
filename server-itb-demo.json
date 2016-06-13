@@ -4,5 +4,6 @@
         "rewrites":{
             "enable":true
         }
-    }
+    },
+    "name":"itb-demo"
 }

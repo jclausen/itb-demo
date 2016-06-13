@@ -42,6 +42,7 @@ component extends="BaseAPIController"{
 
 			rc.id = creation.result.getId();
 			marshallUser(argumentCollection=arguments);
+			rc.statusCode = STATUS.CREATED;
 	
 		} else {
 	

@@ -71,18 +71,20 @@ component extends="BaseService" singleton{
 	public function updateUser(required User User,required struct collection){
 		var response = newResponse();
 		var currentUser = ModelUser.get(session.currentUser.id);
+
 		//handle any permissions on editing first thing
 		if(!currentUser.mayEdit(arguments.User)){
 			esponse.friendlyMessage="The user could not be updated your permission do not allow it.";
 			response.message = "Not Authorized";
 			return response;
 		}
-			
-		//We need to protect certain things from updates
-		var tmpCollection = duplicate(collection);
-		structDelete(tmpCollection,'password');
-		structDelete(tmpCollection,'role');
-
+		
+		//We need to protect certain things from update
+		var tmpCollection = {};
+		var ignoreKeys = [ "data","password","role","authUser" ];
+		for( var key in collection ){
+			if( !arrayContains(ignoreKeys,key) ) structAppend( tmpCollection, { "#key#" : collection[ key ] } )
+		}
 
 		//password changes
 		if(
@@ -121,12 +123,11 @@ component extends="BaseService" singleton{
 
 		}
 
-
 		//begin green light
 		User.populate(memento=tmpCollection);
 
 
-		if(structKeyExists(collection,'Role')){
+		if( structKeyExists( collection, 'Role' ) && isNumeric( collection.role ) ){
 			var selectedRole = ModelRoles.get(collection.role);
 			//FIXME - the < 3 test isn't always going to work
 			if(
@@ -147,11 +148,14 @@ component extends="BaseService" singleton{
 			User.save();
 
 			response.success=true;
-			response.result=User;
+			response.result=User.refresh();
+		
 		} else {
+
 			response.friendlyMessage="The user could not be updated because the changes did not pass validation.  Please try again.";
 			response.message = User.getValidationResults().getAllErrors();
 			response.errors = User.getValidationResults();
+		
 		}
 
 		return response;

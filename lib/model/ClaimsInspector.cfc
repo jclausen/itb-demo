@@ -28,8 +28,8 @@ component persistent="true" table="suretix_claim_inspectors" extends="BaseModel"
 	
 	// Validation
 	this.constraints = {
-		"Phone":{type:"telephone"}
-		"AltPhone":{type:"telephone"}
+		"Phone":{type:"telephone"},
+		"AltPhone":{type:"telephone"},
 		"Email":{type:"email"}
 	};
 	

@@ -1,0 +1,9 @@
+{
+    "heapSize":"4096",
+    "web":{
+        "rewrites":{
+            "enable":true
+        }
+    },
+    "name":"itb-demo"
+}

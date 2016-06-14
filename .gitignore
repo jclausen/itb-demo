@@ -11,3 +11,5 @@
 /node_modules
 /*.sublime*
 *hbm.xml
+.settings/org.eclipse.core.resources.prefs
+settings.xml

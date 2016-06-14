@@ -4,7 +4,7 @@
 component extends="coldbox.system.testing.BaseTestCase" appMapping="/" accessors=true{
 	property name="Wirebox" inject="wirebox";
 	property name="AppSettings" inject="wirebox:properties";
-	property name="APIBaseURL" default="http://127.0.0.1:55919";
+	property name="APIBaseURL" default="http://127.0.0.1:53874";
 	property name="JSONPath" default="/includes/tmp/APIJSON/";
 	property name="SaveJSON" default=false;
 	property name="AuthToken";
@@ -67,19 +67,19 @@ component extends="coldbox.system.testing.BaseTestCase" appMapping="/" accessors
 	**/
 	function expectConsistentAPIResponse(resp,statusCode=200){
 		expect(resp).toBeStruct();
-		expect(resp).toHaveKey('status_code');
+		expect(resp).toHaveKey('statuscode');
 
-		// if(resp.status_code != ARGUMENTS.statusCode){
-		// 	writeOutput(resp.filecontent);
-		// 	abort;
-		// }
+		if(resp.statuscode != ARGUMENTS.statusCode){
+		 	writeOutput(resp.filecontent);
+		 	abort;
+		}
 
 		// if(resp.status_code == 500){
 		// 	writeOutput(resp.filecontent);
 		// 	abort;
 		// }
 
-		expect(resp.status_code).toBe(ARGUMENTS.statusCode);
+		expect(resp.statuscode).toBe(ARGUMENTS.statusCode);
 		expect(resp).toHaveKey('filecontent');
 		
 		// if(!isJSON(resp.filecontent)){

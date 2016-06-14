@@ -31,8 +31,21 @@ module.exports = function(grunt) {
 				options: {
 					livereload: false
 				}
-			}
+			},
+
+			cfml: {
+        		files: [ "tests/**/*.cfc"],
+        		tasks: [ "testbox" ]
+		    }
+
 		},
+		
+		shell: {
+    		testbox: {
+        		command: "node c:/www/itb-demo/node_modules/testbox-runner/index.js --colors --runner http://127.0.0.1:53874/tests/runner.cfm --directory /tests/specs --recurse true"
+        	}
+		},
+
 		sass: {
 			options: {
 				sourceMap: true,
@@ -159,10 +172,12 @@ module.exports = function(grunt) {
 		}
 
 	});
+
+	grunt.loadNpmTasks('grunt-shell');
 	grunt.loadNpmTasks('grunt-sass');
 	grunt.loadNpmTasks('grunt-contrib-requirejs');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.registerTask('default', ['sass:dist','sass:distTheme','sass:distViews','requirejs:compile','uglify:viewJS','uglify:modelJS','uglify:collectionJS', 'watch']);
-	
+	grunt.registerTask("testbox", [ "shell:testbox" ]);
 };

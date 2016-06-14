@@ -3,6 +3,9 @@
     "web":{
         "rewrites":{
             "enable":true
+        },
+        "http":{
+            "port":"53874"
         }
     },
     "name":"itb-demo"

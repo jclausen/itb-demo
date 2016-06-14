@@ -1,0 +1,9 @@
+{
+    "href": "/api/v1/users/569b9d47fd33f3806eae38f7/groups/569b9d47fd33f3806eae38fa/members/569b9d49fd33f3806eae38fd",
+    "_id": "569b9d51fd33f3806eae3903",
+    "inverseMembershipId": "569b9d51fd33f3806eae3904",
+    "added": "January, 17 2016 08:55:27 -0500",
+    "groupId": "569b9d47fd33f3806eae38fa",
+    "confirmed": true,
+    "memberId": "569b9d49fd33f3806eae38fd"
+}

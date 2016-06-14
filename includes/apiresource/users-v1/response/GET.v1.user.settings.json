@@ -1,0 +1,20 @@
+{
+    "_id": "569c1a0bfd33f3270c8dba5d",
+    "href": "/api/v1/users/569c1a0bfd33f3270c8dba5c/settings",
+    "userId": "569c1a0bfd33f3270c8dba5c",
+    "general": {},
+    "privacy": {
+        "defaultPublishGroup": {
+            "id": "569c1871fd33f3270c8dba48",
+            "name": "Friends",
+            "public": true
+        },
+        "privateKeys": [],
+        "friendsVisibility": "public",
+        "birthDateFormat": "mmmm d, yyyy"
+    },
+    "relationships": {
+        "watching": [],
+        "blocked": []
+    }
+}

@@ -1,0 +1,23 @@
+{
+   "href":"/api/v1/users/5693fe699303bda110b77764",
+   "location":{
+      "state":"Grand Rapids",
+      "city":"Michigan"
+   },
+   "lastName":"User",
+   "images":{
+      "cover":{
+         "540x270":"/assets/cde/images/cover/540x270/5693fe699303bda110b77764.jpg",
+         "780x320":"/assets/cde/images/cover/780x320/5693fe699303bda110b77764.jpg",
+         "1080x360":"/assets/cde/images/cover/1080x360/5693fe699303bda110b77764.jpg"
+      },
+      "profile":{
+         "90x90":"/assets/cde/images/profile/90x90/5693fe699303bda110b77764.png",
+         "600x600":"/assets/cde/images/profile/600x600/5693fe699303bda110b77764.png",
+         "320x320":"/assets/cde/images/profile/320x320/5693fe699303bda110b77764.png",
+         "165x165":"/assets/cde/images/profile/165x165/5693fe699303bda110b77764.png"
+      }
+   },
+   "identifier":"5693fe699303bda110b77764",
+   "firstName":"BDD"
+}

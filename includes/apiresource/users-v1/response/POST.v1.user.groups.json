@@ -1,0 +1,12 @@
+{
+    "href": "/api/v1/users/569b9d47fd33f3806eae38f7/groups/569b9d59fd33f3806eae3906",
+    "userId": "569b9d47fd33f3806eae38f7",
+    "created": "January, 16 2016 22:52:50 -0500",
+    "_id": "569b9d59fd33f3806eae3906",
+    "members": "/api/v1/users/569b9d47fd33f3806eae38f7/groups/569b9d59fd33f3806eae3906/members",
+    "updated": "",
+    "name": "My Extra Special Friends",
+    "public": false,
+    "user": "/api/v1/users/569b9d47fd33f3806eae38f7",
+    "description": ""
+}

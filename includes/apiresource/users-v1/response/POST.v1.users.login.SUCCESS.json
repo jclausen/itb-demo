@@ -1,0 +1,47 @@
+{
+    "href": "/api/v1/users/5693ff549303bda110dfa960",
+    "created": "",
+    "_id": "5693ff549303bda110dfa960",
+    "bio": "",
+    "maidenName": "",
+    "lastName": "User",
+    "location": {
+        "zip": "49512",
+        "coordinates": [],
+        "state": "Michigan",
+        "city": "Grand Rapids"
+    },
+    "images": {
+        "cover": {
+            "540x270": "/assets/cde/images/cover/540x270/5693ff549303bda110dfa960.jpg",
+            "780x320": "/assets/cde/images/cover/780x320/5693ff549303bda110dfa960.jpg",
+            "1080x360": "/assets/cde/images/cover/1080x360/5693ff549303bda110dfa960.jpg"
+        },
+        "profile": {
+            "90x90": "/assets/cde/images/profile/90x90/5693ff549303bda110dfa960.png",
+            "600x600": "/assets/cde/images/profile/600x600/5693ff549303bda110dfa960.png",
+            "320x320": "/assets/cde/images/profile/320x320/5693ff549303bda110dfa960.png",
+            "165x165": "/assets/cde/images/profile/165x165/5693ff549303bda110dfa960.png"
+        }
+    },
+    "nickName": "",
+    "identifier": "5693ff549303bda110dfa960",
+    "birthdate": "October, 10 1980 00:00:00 -0400",
+    "idTag": "5693ff549303bda110dfa960",
+    "updated": "",
+    "firstName": "BDD",
+    "middleName": "Test",
+    "contacts": {
+        "mobilePhone": "",
+        "instagram": "",
+        "howrse": "",
+        "pinterest": "",
+        "AIM": "",
+        "website": "",
+        "yahooIM": "",
+        "facebook": "",
+        "twitter": ""
+    },
+    "lastLocation": [],
+    "email": "email@email.com"
+}

@@ -1,0 +1,37 @@
+{
+    "groups": [
+        {
+            "href": "/api/v1/users/569b9d47fd33f3806eae38f7/groups/569b9d47fd33f3806eae38fc",
+            "created": "January, 16 2016 22:52:50 -0500",
+            "_id": "569b9d47fd33f3806eae38fc",
+            "members": "/api/v1/users/569b9d47fd33f3806eae38f7/groups/569b9d47fd33f3806eae38fc/members",
+            "updated": "",
+            "name": "Acquaintances",
+            "public": false,
+            "user": "/api/v1/users/569b9d47fd33f3806eae38f7",
+            "description": ""
+        },
+        {
+            "href": "/api/v1/users/569b9d47fd33f3806eae38f7/groups/569b9d47fd33f3806eae38fb",
+            "created": "January, 16 2016 22:52:50 -0500",
+            "_id": "569b9d47fd33f3806eae38fb",
+            "members": "/api/v1/users/569b9d47fd33f3806eae38f7/groups/569b9d47fd33f3806eae38fb/members",
+            "updated": "",
+            "name": "Family",
+            "public": false,
+            "user": "/api/v1/users/569b9d47fd33f3806eae38f7",
+            "description": ""
+        },
+        {
+            "href": "/api/v1/users/569b9d47fd33f3806eae38f7/groups/569b9d47fd33f3806eae38fa",
+            "created": "January, 16 2016 22:52:50 -0500",
+            "_id": "569b9d47fd33f3806eae38fa",
+            "members": "/api/v1/users/569b9d47fd33f3806eae38f7/groups/569b9d47fd33f3806eae38fa/members",
+            "updated": "",
+            "name": "Friends",
+            "public": false,
+            "user": "/api/v1/users/569b9d47fd33f3806eae38f7",
+            "description": ""
+        }
+    ]
+}

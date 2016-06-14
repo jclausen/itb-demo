@@ -154,7 +154,7 @@
 		//RELAX Configuration
 		relax = {
 			APILocation 	= "includes.apiresource",
-			defaultAPI 		= "suretix",
+			defaultAPI 		= "users-v1",
 			maxHistory		= 10
 		};
 

@@ -1,0 +1,22 @@
+{
+    "users": [
+        {
+            "href": "/api/v1/users/5693caf99303bd7c75089a9a",
+            "lastname": "User",
+            "images": {
+                "cover": {
+                    "540x270": "/assets/cde/images/cover/540x270/5693caf99303bd7c75089a9a.jpg",
+                    "780x320": "/assets/cde/images/cover/780x320/5693caf99303bd7c75089a9a.jpg",
+                    "1080x360": "/assets/cde/images/cover/1080x360/5693caf99303bd7c75089a9a.jpg"
+                },
+                "profile": {
+                    "90x90": "/assets/cde/images/profile/90x90/5693caf99303bd7c75089a9a.png",
+                    "600x600": "/assets/cde/images/profile/600x600/5693caf99303bd7c75089a9a.png",
+                    "320x320": "/assets/cde/images/profile/320x320/5693caf99303bd7c75089a9a.png",
+                    "165x165": "/assets/cde/images/profile/165x165/5693caf99303bd7c75089a9a.png"
+                }
+            },
+            "firstname": "BDD"
+        }
+    ]
+}
